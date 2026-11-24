@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learnly – Online Courses</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="#top" class="logo">Learnly</a>
+    <nav aria-label="Main">
+      <a href="#categories">Categories</a>
+      <a href="#courses">Courses</a>
+      <a href="#instructors">Instructors</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#enroll" class="btn btn-small">Enroll now</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Learn a skill this month. Use it next week.</h1>
+        <p>Short, practical courses taught by working professionals. Study at your own pace and finish with a project for your portfolio.</p>
+        <form class="search" role="search" onsubmit="return false">
+          <label for="q" class="sr-only">Search courses</label>
+          <input id="q" type="search" placeholder="Try “Python” or “UI design”">
+          <button class="btn" type="submit">Search courses</button>
+        </form>
+      </div>
+      <ul class="hero-stats">
+        <li><strong>120+</strong> courses</li>
+        <li><strong>48,000</strong> learners</li>
+        <li><strong>4.8 / 5</strong> average rating</li>
+      </ul>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section id="categories" class="section">
+      <h2>Browse by category</h2>
+      <div class="category-grid">
+        <a href="#courses" class="category c-blue"><span>💻</span><b>Programming</b><small>32 courses</small></a>
+        <a href="#courses" class="category c-pink"><span>🎨</span><b>Design</b><small>24 courses</small></a>
+        <a href="#courses" class="category c-green"><span>📊</span><b>Data Science</b><small>18 courses</small></a>
+        <a href="#courses" class="category c-yellow"><span>📈</span><b>Business</b><small>27 courses</small></a>
+        <a href="#courses" class="category c-purple"><span>📣</span><b>Marketing</b><small>15 courses</small></a>
+        <a href="#courses" class="category c-teal"><span>🗣️</span><b>Languages</b><small>12 courses</small></a>
+      </div>
+    </section>
+
+    <!-- COURSE CARDS -->
+    <section id="courses" class="section">
+      <h2>Popular courses</h2>
+      <div class="course-grid">
+
+        <article class="card">
+          <div class="thumb c-blue">🐍</div>
+          <div class="card-body">
+            <span class="tag">Programming</span>
+            <h3>Python for Beginners</h3>
+            <p class="by">by Ananya Rao</p>
+            <p class="meta">8 weeks · 42 lessons · Beginner</p>
+            <p class="rating">★ 4.9 <span>(2,310 reviews)</span></p>
+            <div class="card-foot"><strong>₹1,999</strong><a href="#enroll" class="btn btn-small">Enroll</a></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb c-pink">✏️</div>
+          <div class="card-body">
+            <span class="tag">Design</span>
+            <h3>UI/UX Design Essentials</h3>
+            <p class="by">by Karthik Menon</p>
+            <p class="meta">6 weeks · 30 lessons · Beginner</p>
+            <p class="rating">★ 4.8 <span>(1,845 reviews)</span></p>
+            <div class="card-foot"><strong>₹2,499</strong><a href="#enroll" class="btn btn-small">Enroll</a></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb c-green">📉</div>
+          <div class="card-body">
+            <span class="tag">Data Science</span>
+            <h3>Data Analysis with Excel &amp; SQL</h3>
+            <p class="by">by Priya Sharma</p>
+            <p class="meta">5 weeks · 28 lessons · Intermediate</p>
+            <p class="rating">★ 4.7 <span>(1,120 reviews)</span></p>
+            <div class="card-foot"><strong>₹2,199</strong><a href="#enroll" class="btn btn-small">Enroll</a></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb c-yellow">🚀</div>
+          <div class="card-body">
+            <span class="tag">Business</span>
+            <h3>Start Your First Business</h3>
+            <p class="by">by Rohit Verma</p>
+            <p class="meta">4 weeks · 20 lessons · Beginner</p>
+            <p class="rating">★ 4.6 <span>(860 reviews)</span></p>
+            <div class="card-foot"><strong>₹1,499</strong><a href="#enroll" class="btn btn-small">Enroll</a></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb c-purple">📱</div>
+          <div class="card-body">
+            <span class="tag">Marketing</span>
+            <h3>Social Media Marketing</h3>
+            <p class="by">by Karthik Menon</p>
+            <p class="meta">4 weeks · 22 lessons · Beginner</p>
+            <p class="rating">★ 4.7 <span>(990 reviews)</span></p>
+            <div class="card-foot"><strong>₹1,799</strong><a href="#enroll" class="btn btn-small">Enroll</a></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb c-teal">🇬🇧</div>
+          <div class="card-body">
+            <span class="tag">Languages</span>
+            <h3>Spoken English Confidence</h3>
+            <p class="by">by Ananya Rao</p>
+            <p class="meta">6 weeks · 36 lessons · All levels</p>
+            <p class="rating">★ 4.8 <span>(1,540 reviews)</span></p>
+            <div class="card-foot"><strong>₹999</strong><a href="#enroll" class="btn btn-small">Enroll</a></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- COURSE INFORMATION -->
+    <section class="section info">
+      <div class="info-main">
+        <h2>Inside Python for Beginners</h2>
+        <p>You will write real programs from week one. By the end you will have built a budget tracker, a web scraper and a small game.</p>
+        <h3>What you will learn</h3>
+        <ul class="checks">
+          <li>Variables, loops and functions</li>
+          <li>Working with files and data</li>
+          <li>Debugging and testing your code</li>
+          <li>Building three portfolio projects</li>
+        </ul>
+        <h3>Syllabus</h3>
+        <details open><summary>Weeks 1–2: Python basics</summary><p>Install Python, write your first script, and learn data types and control flow.</p></details>
+        <details><summary>Weeks 3–4: Functions and data</summary><p>Organize code with functions, lists, dictionaries and modules.</p></details>
+        <details><summary>Weeks 5–6: Files and the web</summary><p>Read and write files, call web APIs and scrape pages.</p></details>
+        <details><summary>Weeks 7–8: Final project</summary><p>Plan, build and present your own program with feedback from your instructor.</p></details>
+      </div>
+      <aside class="info-side" aria-label="Course details">
+        <h3>Course details</h3>
+        <dl>
+          <dt>Duration</dt><dd>8 weeks</dd>
+          <dt>Time needed</dt><dd>4–5 hours a week</dd>
+          <dt>Level</dt><dd>Beginner</dd>
+          <dt>Language</dt><dd>English</dd>
+          <dt>Certificate</dt><dd>Included</dd>
+          <dt>Next start date</dt><dd>1 December 2026</dd>
+        </dl>
+        <a href="#enroll" class="btn">Enroll in this course</a>
+      </aside>
+    </section>
+
+    <!-- INSTRUCTORS -->
+    <section id="instructors" class="section">
+      <h2>Meet your instructors</h2>
+      <div class="instructor-grid">
+        <article class="instructor">
+          <div class="avatar c-blue">AR</div>
+          <h3>Ananya Rao</h3>
+          <p class="role">Senior software engineer</p>
+          <p>12 years building products at startups. Has taught more than 20,000 students.</p>
+        </article>
+        <article class="instructor">
+          <div class="avatar c-pink">KM</div>
+          <h3>Karthik Menon</h3>
+          <p class="role">Product designer</p>
+          <p>Leads design at a fintech company and mentors first-time designers.</p>
+        </article>
+        <article class="instructor">
+          <div class="avatar c-green">PS</div>
+          <h3>Priya Sharma</h3>
+          <p class="role">Data analyst</p>
+          <p>Turns messy data into clear decisions. Former analytics lead at a retail brand.</p>
+        </article>
+        <article class="instructor">
+          <div class="avatar c-yellow">RV</div>
+          <h3>Rohit Verma</h3>
+          <p class="role">Founder and business coach</p>
+          <p>Started three companies and now helps new founders find their first customers.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="section">
+      <h2>What students say</h2>
+      <div class="review-grid">
+        <blockquote class="review">
+          <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+          <p>I had never written code before. Eight weeks later I built a tool that saves me two hours at work every week.</p>
+          <footer><b>Sneha Reddy</b>, Python for Beginners</footer>
+        </blockquote>
+        <blockquote class="review">
+          <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+          <p>Karthik reviews every assignment personally. My portfolio got me three interviews.</p>
+          <footer><b>Arjun Patel</b>, UI/UX Design Essentials</footer>
+        </blockquote>
+        <blockquote class="review">
+          <p class="stars" aria-label="4 out of 5 stars">★★★★☆</p>
+          <p>Clear lessons and real datasets. I wish there were more advanced SQL exercises.</p>
+          <footer><b>Meera Nair</b>, Data Analysis with Excel &amp; SQL</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ENROLLMENT -->
+    <section id="enroll" class="section enroll">
+      <h2>Choose how you want to learn</h2>
+      <div class="plan-grid">
+        <article class="plan">
+          <h3>Single course</h3>
+          <p class="price">₹1,999</p>
+          <ul><li>Lifetime access to one course</li><li>Certificate of completion</li><li>Community forum</li></ul>
+          <a href="#enroll-form" class="btn btn-outline">Buy a course</a>
+        </article>
+        <article class="plan featured">
+          <h3>Monthly pass</h3>
+          <p class="price">₹799 <small>/ month</small></p>
+          <ul><li>Access to all 120+ courses</li><li>Instructor feedback on projects</li><li>Certificates for every course</li><li>Cancel any time</li></ul>
+          <a href="#enroll-form" class="btn">Start monthly pass</a>
+        </article>
+        <article class="plan">
+          <h3>Teams</h3>
+          <p class="price">₹599 <small>/ learner / month</small></p>
+          <ul><li>For 5 or more learners</li><li>Progress dashboard</li><li>Dedicated support</li></ul>
+          <a href="#enroll-form" class="btn btn-outline">Contact sales</a>
+        </article>
+      </div>
+
+      <form id="enroll-form" class="form" onsubmit="event.preventDefault(); this.querySelector('.msg').hidden = false;">
+        <h3>Reserve your seat</h3>
+        <label>Full name <input type="text" required></label>
+        <label>Email address <input type="email" required></label>
+        <label>Course
+          <select required>
+            <option value="">Select a course</option>
+            <option>Python for Beginners</option>
+            <option>UI/UX Design Essentials</option>
+            <option>Data Analysis with Excel &amp; SQL</option>
+            <option>Start Your First Business</option>
+            <option>Social Media Marketing</option>
+            <option>Spoken English Confidence</option>
+          </select>
+        </label>
+        <button class="btn" type="submit">Enroll now</button>
+        <p class="msg" hidden>Thank you! Check your email to complete your enrollment.</p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p><b>Learnly</b> – Learn practical skills online.</p>
+    <p>© 2026 Learnly. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
